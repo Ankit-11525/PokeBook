@@ -1,0 +1,1 @@
+const search_term=document.getElementById('search_q')
