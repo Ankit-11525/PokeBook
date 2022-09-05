@@ -22,7 +22,7 @@ input:focus {
     border: none;
     padding-bottom: 10px 25px;
     border-radius: 0 5px 5px 0;
-    background-color: #22CBA8;
+    background-color: #f1c526;
     color: #fff;
     margin-left: -15px;
     cursor: pointer;
@@ -74,7 +74,7 @@ input:focus {
     box-shadow: 0 0 8px rgba(0,0,0,0.3);
 }
 .seperator {
-    border-color: #6EECB7 !important;
+    border-color: #eca06e !important;
     border-width: 10px;
     border-radius: 5px;
 }
@@ -82,12 +82,15 @@ input:focus {
 .btn_transfer {
     margin: 45px 0;
     padding: 15px 30px;
-    background: linear-gradient(to right, #9EDA93, #22CBA8);
+    background: linear-gradient(to right, #dabc93, #f1981c);
     border-radius: 25px;
     border: none;
     color: #fff;
     min-width: 60%;
 }
+/* .btn_transfer a {
+    text-decoration: none;
+} */
 .stats span.first {
     border-right:1px solid #eee
 }
