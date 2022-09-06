@@ -1,3 +1,7 @@
+*
+{
+    box-sizing: border-box;
+}
 img {
     width: 80%;
     padding: 60px;
@@ -7,12 +11,7 @@ img {
     opacity: 0;
     display: none;
 }
-.search-container {
-    /* border:2px solid red; */
-    display: flex;
-    margin: 10px;
-    width: 80%;
-}
+
 input:focus {
     border: 1px solid #22CBA8;
     box-shadow: none!important;
@@ -72,6 +71,8 @@ input:focus {
     width: 100%;
     margin-top: -150px;
     box-shadow: 0 0 8px rgba(0,0,0,0.3);
+    box-sizing: border-box;
+
 }
 .seperator {
     border-color: #eca06e !important;
@@ -113,16 +114,29 @@ input:focus {
 }
 .player-data {
     display: flex;
-    align-items: center;
-    justify-content: center;
     width: 100%;
     margin-top: 15px;
+    box-sizing: border-box;
     border-top: 1px solid #eee;
     padding-top: 15px;
-    text-align: center;
+
+    justify-content: space-between;
+    /* 
+    text-align: center; */
 }
 .data-container p {
     margin-bottom: 0;
+}
+.search_container
+{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+.search_container input
+{
+    width: 100%;
+    /* margin: auto; */
 }
 
 #update_name, #update_candy_title{
