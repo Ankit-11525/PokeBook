@@ -4,6 +4,9 @@ const search_btn=document.getElementById('search-btn')
 // api http://pokeapi.co/docs/v2#pokemon
 const getPokemonData = async term => {
     // console.log(${term})
+    console.log(term);
+    
+    term=term.toLowerCase();
     document.getElementById('show_error').classList.remove('show')
     document.getElementById('show_error').classList.add('hidden')
     const url= `https://pokeapi.co/api/v2/pokemon/${term}`
@@ -29,5 +32,13 @@ const getPokemonData = async term => {
     document.getElementById('update_candy').innerHTML = Math.floor((Math.random() * 200) + 1)
     document.getElementById('update_link').setAttribute('href',`https://www.pokemon.com/us/pokedex/${term}`)
 }
-search_btn.addEventListener('click', () => getPokemonData(search_term.value))
+search_btn.addEventListener('click', () => getPokemonData(search_term.value.toLowerCase()))
+document.addEventListener('keypress',function(event)
+{
+
+    if(event.key=='Enter')
+    {
+        getPokemonData(search_term.value);
+    }
+})
 
