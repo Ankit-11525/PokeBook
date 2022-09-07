@@ -1,3 +1,3 @@
 # PokeBook
 <br>
-<img src="Preview PokeBook.jpeg" width="500" height="400" />
+<img src="Preview PokeBook.jpeg" width="500" height="800" />
